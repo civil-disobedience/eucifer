@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Eu cifer",
+	"version": "1.0",
+	"description": "Make EU texts more citizen friendly. Replaces weasel words by what they mean in civilian english.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
